@@ -49,8 +49,6 @@ app.post("/", async (req, res) => {
 });
 
 app.listen(port, () => {
-  mongoose.connect(
-    "mongodb+srv://cala:Ga5566.2469@starwars-api.fbbiw.mongodb.net/?retryWrites=true&w=majority&appName=Starwars-API"
-  );
+  mongoose.connect();
   console.log("App running");
 });
